@@ -1,0 +1,196 @@
+<div class="wedding-card">
+  <section class="hero" style="background-image: url('./assets/Front-Background.png');">
+    <div class="wrapper">
+      <div style="color: #58595b">
+        <p class="opening">Wedding Reception</p>
+      </div>
+      <div class="wedding-couple" style="color: #58595b">
+        <p class="groom">{{card.ShortNameMale}}</p>
+        <p class="with">&amp;</p>
+        <p class="bride">{{card.ShortNameFemale}}</p>
+      </div>
+      <p class="date" style="color: #58595b; "><span class="week-day">Sunday,</span><span
+          class="day">01<sup>st</sup></span><span class="month">December</span><span class="year">2019</span></p>
+      <p class="location" style="color: #58595b">Dewan Tengku Zara
+        <br>Lot 1513-A, Jalan Bangi, Kg. Sg. Tangkas, 43000 Kajang, Selangor</p>
+    </div>
+  </section>
+  <section class="event-info">
+    <div class="wrapper">
+      <p class="greeting">Wedding Reception</p>
+      <div class="wedding-inviter">
+        <p>{{card.FatherName}}</p>
+        <p>&amp;</p>
+        <p>{{card.MotherName}}</p>
+      </div>
+      <p class="greeting">We request the honour of your presence for the wedding of</p>
+      <div class="wedding-people">
+        <p>{{card.FullNameMale}}</p>
+        <p>&amp;</p>
+        <p>{{card.FullNameFemale}}</p>
+      </div>
+      <div class="wedding-event-info">
+        <p class="info-heading">Date</p>
+        <p>Sunday, 01<sup>st</sup> December 2019</p>
+      </div>
+      <div class="wedding-event-info">
+        <p class="info-heading">Time</p>
+        <p>12:30 PM - 3:30 PM</p>
+      </div>
+      <div class="wedding-event-info">
+        <p class="info-heading">Venue</p>
+        <p>Dewan Tengku Zara
+          <br>Lot 1513-A, Jalan Bangi, Kg. Sg. Tangkas, 43000 Kajang, Selangor</p>
+      </div>
+    </div>
+  </section>
+  <section class="guest-book">
+    <div class="wrapper">
+      <h2 class="section-header">Guest Book</h2>
+      <div class="carousel-wrapper">
+        <div class="guestbooks-carousel slick-carousel">
+        </div>
+      </div>
+      <div class="comments-form-wrapper">
+        <h2 class="section-header">Sign Our Guestbook</h2>
+        <div class="simple_form new_comment" action="">
+          <div class="comment-form-group">
+            <label class="form-control-label string optional">Name</label>
+            <input class="form-control rounded-0 string optional" placeholder="Ikhwan" type="text" id="guest_name" />
+          </div>
+          <div class="comment-form-group">
+            <div class="form-group text optional comment_body">
+              <label class="form-control-label text optional">Body</label>
+              <textarea class="form-control rounded-0 text optional"
+                placeholder="Congratulations! Wishing you a lifetime of love and happiness."
+                id="guest_wishes"></textarea>
+            </div>
+          </div>
+          <div class="comment-form-group"><button id="wish-button" value="Leave A Wish" class="btn btn-main btn-block"
+              onclick="getFormData()">Leave A Wish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <br />
+  </section>
+  <footer>
+    <p class="hashtag">#{{card.ShortNameMale}}X{{card.ShortNameFemale}}</p>
+  </footer>
+  <div class="fixed-menu"><svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol class="svg-color" id="icon-help" viewBox="0 0 24 24">
+          <title>icon-help</title>
+          <path
+            d="M4 0h16c2.209 0 4 1.791 4 4v16c0 2.209-1.791 4-4 4h-16c-2.209 0-4-1.791-4-4v-16c0-2.209 1.791-4 4-4zM16.832 7.168c-1.982-1.982-4.963-2.575-7.553-1.502s-4.278 3.6-4.278 6.403c0 2.803 1.689 5.33 4.278 6.403s5.571 0.48 7.553-1.502c1.304-1.297 2.037-3.061 2.037-4.901s-0.733-3.603-2.037-4.901zM11.825 16.389c-0.585 0-1.059-0.474-1.059-1.059s0.473-1.059 1.058-1.059c0.585-0.001 1.059 0.473 1.060 1.058s-0.474 1.060-1.059 1.060zM14.653 11.121c-0.166 0.277-0.518 0.635-1.044 1.048-0.39 0.308-0.629 0.554-0.733 0.743-0.102 0.203-0.156 0.426-0.158 0.653h-1.923v-0.121c-0.009-0.286 0.031-0.571 0.118-0.843 0.078-0.214 0.195-0.412 0.345-0.584 0.337-0.346 0.696-0.671 1.076-0.97 0.327-0.266 0.485-0.51 0.485-0.747 0.011-0.203-0.066-0.402-0.211-0.545-0.172-0.141-0.391-0.211-0.613-0.195-0.271-0.008-0.533 0.098-0.722 0.291-0.176 0.177-0.29 0.463-0.347 0.872l-1.967-0.243c0.059-0.667 0.354-1.292 0.832-1.762 0.481-0.463 1.235-0.693 2.241-0.693 0.786 0 1.425 0.165 1.903 0.489 0.653 0.441 0.97 1.012 0.97 1.744-0.005 0.303-0.093 0.6-0.254 0.857v0.006z"
+            fill="#99a9b4" style="fill: var(--color1, #99a9b4)"></path>
+        </symbol>
+        <symbol class="svg-color" fill="none" height="25" id="icon-calendar" stroke="#ffffff" stroke-linecap="round"
+          stroke-linejoin="bevel" stroke-width="1" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
+          <rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect>
+          <line x1="16" x2="16" y1="2" y2="6"></line>
+          <line x1="8" x2="8" y1="2" y2="6"></line>
+          <line x1="3" x2="21" y1="10" y2="10"></line>
+        </symbol>
+        <symbol class="svg-color" fill="none" height="25" id="icon-photos" stroke="#ffffff" stroke-linecap="round"
+          stroke-linejoin="bevel" stroke-width="1" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
+          <rect height="18" rx="2" width="18" x="3" y="3"></rect>
+          <circle cx="8.5" cy="8.5" r="1.5"></circle>
+          <path d="M20.4 14.5L16 10 4 20"></path>
+        </symbol>
+        <symbol class="svg-color" fill="none" height="25" id="icon-call" stroke="#ffffff" stroke-linecap="round"
+          stroke-linejoin="bevel" stroke-width="1" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </symbol>
+        <symbol class="svg-color" fill="none" height="25" id="icon-guestbook" stroke="#ffffff" stroke-linecap="round"
+          stroke-linejoin="bevel" stroke-width="1" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </symbol>
+        <symbol class="svg-color" fill="none" height="25" id="icon-map" stroke="#ffffff" stroke-linecap="round"
+          stroke-linejoin="bevel" stroke-width="1" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="10" r="3"></circle>
+          <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="bottom-navigation">
+      <div class="menu"><span class="link" data-target="calendar"><svg class="svg-icon">
+            <use xlink:href="#icon-calendar"></use>
+          </svg>
+          <p class="svg-text" id="text-calendar">CALENDAR</p>
+        </span><span class="link" data-target="call"><svg class="svg-icon">
+            <use xlink:href="#icon-call"></use>
+          </svg>
+          <p class="svg-text" id="text-call">CALL</p>
+        </span><span class="link" data-target="map"><svg class="svg-icon">
+            <use xlink:href="#icon-map"></use>
+          </svg>
+          <p class="svg-text" id="text-map">MAP</p>
+        </span></div>
+      <div class="company-motto">
+        <p>Create your card with &nbsp;<a href="http://muhammadzulhilmi.com">mzmstechnologies.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="overlay-2">
+    <div class="action-type" id="action-calendar">
+      <div class="row">
+        <div class="col"><a class="non-block ga-calendar-ical" href="./assets/Wedding Reception Azrina & Zulhilmi.ics">
+            <div class="wrapper"><img src="./assets/social-icons/apple-calender.png"><span class="text">Apple
+                Calendar</span></div>
+          </a></div>
+        <div class="col"><a class="non-block ga-calendar-gcal"
+            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+Reception+Azrina+%26+Zulhilmi&location=https%3A%2F%2Fgoo.gl%2Fmaps%2FVbqwi7pWLoxjwXgk9&dates=20191201T040000Z%2F20191201T083000Z">
+            <div class="wrapper"><img src="./assets/social-icons/google-calender.png"><span class="text">Google
+                Calendar</span></div>
+          </a></div>
+      </div>
+    </div>
+    <div class="action-type" id="action-call">
+      <div class="row">
+        <div class="col block">
+          <div class="contact">
+            <div class="wrapper"><span class="name">Diba</span>
+              <div class="number">
+                <a class="ga-contact-call" href="tel:0132881904">
+                  <img src="./assets/social-icons/phone.png">
+                </a>
+                <a class="ga-contact-whatsapp" href="https://api.whatsapp.com/send?phone=60132881904">
+                  <img class="whatsapp" src="./assets/social-icons/whatsapp.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col block">
+          <div class="contact">
+            <div class="wrapper"><span class="name">Umi</span>
+              <div class="number"><a class="ga-contact-call" href="tel:0177662275"><img
+                    src="./assets/social-icons/phone.png"></a>
+                <a class="ga-contact-whatsapp" href="https://api.whatsapp.com/send?phone=60177662275">
+                  <img class="whatsapp" src="./assets/social-icons/whatsapp.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="action-type" id="action-map">
+      <div class="row">
+        <div class="col"><a class="non-block ga-navigate-waze"
+            href="https://www.waze.com/ul?ll=2.94492970%2C101.78596440&navigate=yes">
+            <div class="wrapper"><img src="./assets/social-icons/waze.png"><span class="text">Waze</span></div>
+          </a></div>
+        <div class="col"><a class="non-block ga-navigate-gmap" href="https://goo.gl/maps/Vbqwi7pWLoxjwXgk9">
+            <div class="wrapper"><img src="./assets/social-icons/gmap.png"><span class="text">Google Maps</span></div>
+          </a></div>
+      </div>
+    </div>
+  </div>
+</div>

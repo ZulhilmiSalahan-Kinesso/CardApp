@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: 'AIzaSyCp0kEuxSy6E1WrqLlBVIEQ9ydzw7G0uZk',
+    authDomain: 'weddingdigital-323cd.firebaseapp.com',
+    databaseURL: 'https://weddingdigital-323cd.firebaseio.com',
+    projectId: 'weddingdigital-323cd',
+    storageBucket: 'weddingdigital-323cd.appspot.com',
+    messagingSenderId: '325503193672',
+    appId: '1:325503193672:web:1edfec5176480604ffbe7d'
+  }
 };
 
 /*

@@ -1,0 +1,40 @@
+<form padding novalidate [formGroup]="cardForm" (ngSubmit)="createCard(cardForm.value)">
+
+  <div>
+    <mat-form-field class="input-style">
+      <input matInput placeholder="Card Name" class="form-control" formControlName="CardName">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Short Name Male" class="form-control" formControlName="ShortNameMale">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Full Name Male" class="form-control" formControlName="FullNameMale">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Full Name Female" class="form-control" formControlName="FullNameFemale">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Father Name" class="form-control" formControlName="FatherName">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Mother Name" class="form-control" formControlName="MotherName">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <button class="submit-button" color="primary" type="submit">Create</button>
+  </div>
+</form>
