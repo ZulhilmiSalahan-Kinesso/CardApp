@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Alex+Brush|Cinzel");
+
+@font-face {
+    font-family: 'Kissita';
+    src: url(/assets/kissitademo.otf);
+    src: url(/assets/kissitademo.otf?#iefix) format("embedded-opentype"),
+    url(/assets/kissitademo.woff2) format("woff2"),
+    url(/assets/kissitademo.woff) format("woff"),
+    url(/assets/kissitademo.ttf) format("truetype"),
+    url(/assets/kissitademo.svg#kissitademo) format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+section.hero {
+    text-transform: uppercase;
+    font-family: 'Cinzel'
+}
+
+section.hero .wrapper {
+    padding: 160px 0px
+}
+
+section.hero p.opening {
+    font-size: 0.9em
+}
+
+section.hero .wedding-couple {
+    text-transform: none
+}
+
+section.hero .wedding-couple p {
+    font-size: 4.5em;
+    line-height: 0.80em;
+    font-family: 'Kissita'
+}
+
+section.hero .wedding-couple p.with {
+    font-family: 'Alex Brush', cursive;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 10px auto
+}
+
+section.hero p.date,
+section.hero p.location,
+section.hero p.address {
+    font-size: 1em
+}
+
+section.hero p.date span {
+    padding-left: 4px
+}
+
+section.hero p.location {
+    font-size: 1em
+}
